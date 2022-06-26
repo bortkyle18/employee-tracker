@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# env password protect
+env
+
+# Mac DS_Store
+DS_Store
