@@ -3,7 +3,13 @@ const figlet = require('figlet');
 const inquirer = require('inquirer');
 const db = require('./db/connection');
 
-// const run = require('./functions');
+const viewAllDepartments = require('./FUNC/viewAllDepartments');
+// const viewAllRoles = require('./FUNC/viewAllRoles');
+// const viewAllEmployees = require('./FUNC/viewAllEmployees');
+// const addDepartment = require('./FUNC/addDepartment');
+// const addRole = require('./FUNC/addRole');
+// const addEmployee = require('./FUNC/addEmployee');
+// const updateEmployeeRole = require('./FUNC/updateEmployeeRole');
 
 
 // Connect to the DB
@@ -34,25 +40,32 @@ function startApp() {
     .then(res => {
         switch (res.action) {
             case 'View All Departments':
-                run.viewAllDepartments();
+                viewAllDepartments(),
+                startApp();
                 break;
             case 'View All Roles':
-                run.viewAllRoles();
+                viewAllRoles(),
+                startApp();
                 break;
             case 'View All Employees':
-                run.viewAllEmployees();
+                viewAllEmployees(),
+                startApp();
                 break;
             case 'Add Department':
-                run.addDepartment();
+                addDepartment(),
+                startApp();
                 break;
             case 'Add Role':
-                run.addRole();
+                addRole(),
+                startApp();
                 break;
             case 'Add Employee':
-                run.addEmployee();
+                addEmployee(),
+                startApp();
                 break;
             case "Update Employee's Role":
-                run.updateEmployeeRole();
+                updateEmployeeRole(),
+                startApp();
                 break;
             default:
                 db.end();
