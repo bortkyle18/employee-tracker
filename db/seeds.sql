@@ -21,11 +21,14 @@ SELECT * FROM ROLE;
 
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Jim", "Johnson", 3, 1),
-    ("Emma", "Elliot", 3, NULL),
-    ("Cam", "Charles", 1, 2),
-    ("Wanda", "Wise", 1, 2),
+VALUES ("Emma", "Elliot", 3, NULL),
+    ("Jim", "Johnson", 5, Null),
+    ("Tina", "Thomas", 6, Null),
+    ("Cam", "Charles", 1, 1),
+    ("Wanda", "Wise", 1, 1),
     ("Sarah", "Smith", 2, 1),
-    ("Pam", "Phillips", 4, 1)
+    ("Pam", "Phillips", 4, 2),
+    ("Annett", "Alan", 7, 3),
+    ("Hannah", "Hobbs", 8, Null)
 ;
 SELECT * FROM employee;

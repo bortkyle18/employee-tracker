@@ -4,7 +4,7 @@ const cTable = require('console.table');
 const viewAllDepartments = () => {
     db.query(`SELECT * FROM department`, (err, res) => {
         if (err) throw err;
-        console.table('View All Departments:',res);
+        console.table('All Departments:',res);
         return
     }
 )};

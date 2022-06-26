@@ -5,7 +5,7 @@ const db = require('./db/connection');
 
 const viewAllDepartments = require('./FUNC/viewAllDepartments');
 const viewAllRoles = require('./FUNC/viewAllRoles');
-// const viewAllEmployees = require('./FUNC/viewAllEmployees');
+const viewAllEmployees = require('./FUNC/viewAllEmployees');
 // const addDepartment = require('./FUNC/addDepartment');
 // const addRole = require('./FUNC/addRole');
 // const addEmployee = require('./FUNC/addEmployee');

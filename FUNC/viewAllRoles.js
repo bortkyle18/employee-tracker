@@ -6,7 +6,7 @@ const viewAllRoles = () => {
                 FROM ROLE AS R LEFT JOIN DEPARTMENT AS D
                 ON R.department_id = D.id;`, (err, res) => {
         if (err) throw err;
-        console.table('View All Roles:',res);
+        console.table('All Roles:',res);
         return
     }
 )};
