@@ -43,7 +43,8 @@ function startApp() {
                 startApp();
                 break;
             case 'View All Employees':
-                viewAllEmployees();
+                viewAllEmployees(),
+                startApp();
                 break;
             case 'Add Department':
                 addDepartment();
